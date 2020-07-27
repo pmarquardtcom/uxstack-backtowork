@@ -1,0 +1,58 @@
+/* COLORS */
+$backgroundColor: #f6f8fa;
+$hivexBlue: #0277bd;
+$hivexDarkBlue: #004c8c;
+$white: #fff;
+$borderColor: #55627c;
+$grey: #e5e5e5;
+$formBackground: #fff;
+
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+$font-stack: 'Roboto', sans-serif;
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.step-content {
+  height: 100%;
+}
+
+.step-content::-webkit-scrollbar-track {
+  border: 1px solid $borderColor;
+  background-color: transparent;
+}
+
+.step-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.step-content::-webkit-scrollbar-thumb {
+  background-color: $borderColor;
+}
+
+.inner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#faketoggle button.input-toggle-button:nth-child(2) {
+  @media only screen and (max-width: 576px) {
+    border-left: 1px solid #55627c;
+  }
+
+  border-left: 0;
+
+  &:hover {
+    border: 1px solid $hivexBlue;
+  }
+}
